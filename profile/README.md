@@ -1,12 +1,19 @@
-## Hi there 👋
+# Active Traffic Control (ATC)
 
-<!--
+ATC automates Consul `service-resolver` configuration. It watches the Consul catalog and publishes failover and redirect rules for services that opt in with tags, so traffic moves to another datacenter without hand-written resolver entries.
 
-**Here are some ideas to get you started:**
+## Repositories
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+| Repository | What it is |
+|---|---|
+| [atc](https://github.com/atcprojectio/atc) | The ATC daemon: a Go service with an embedded dashboard, REST API and MCP server, plus a Helm chart and Nomad job. |
+| [atc-demo](https://github.com/atcprojectio/atc-demo) | A local multi-datacenter Consul sandbox with an observability stack (Grafana, Loki, Tempo, Prometheus) and step-by-step scenarios. |
+| [homebrew-tap](https://github.com/atcprojectio/homebrew-tap) | The Homebrew tap for installing ATC on macOS. |
+
+## Get started
+
+```bash
+brew install --cask atcprojectio/tap/atc
+```
+
+Documentation: **[atc-project.io](https://atc-project.io)**
